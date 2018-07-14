@@ -1,0 +1,125 @@
+    1  vim /etc/ssh/sshd_config 
+    2  apt-get install vim
+    3  vim /etc/ssh/sshd_config 
+    4  /etc/init.d/ssh restart
+    5  apt-get install isc-dhcp-server
+    6  ip a show
+    7  cp /home/aluno/.bashrc /root
+    8  vim /etc/ssh/sshd_config 
+    9  /etc/init.d/ssh restart
+   10  exit
+   11  ip a show
+   12  dhclient enp0s3
+   13  ip a show
+   14  exit
+   15  chmod +x /etc/rc.local 
+   16  halt
+   17  ip a show
+   18  iptables -t nat -L
+   19  apt-get remove firewalld
+   20  reboot
+   21  ip a show
+   22  iptables -t nat -L
+   23  more /etc/login.defs 
+   24  getent passwd
+   25  id aluno
+   26  getent group
+   27  groups aluno
+   28  finger aluno
+   29  cat /etc/passwd | grep aluno
+   30  head /etc/passwd
+   31  adduser luciano.aguiar
+   32  adduser --force-badname luciano.aguiar
+   33  cat /etc/passwd | grep luciano
+   34  chage -M 30 luciano.aguiar
+   35  chage -l luciano.aguiar
+   36  chage -L luciano.aguiar
+   37  chage -I luciano.aguiar
+   38  chage -I l
+   39  chage -I 
+   40  chage -I luciano.aguiar
+   41  chage -d 1 luciano.aguiar
+   42  chage -h luciano.aguiar
+   43  gpasswd -a luciano.aguiar aluno
+   44  finger luciano.aguiar
+   45  chage -l aluno
+   46  chage -M 30 -m 1 luciano.aguiar
+   47  chage -l luciano.aguiar
+   48  chage -L luciano.aguiar
+   49  chage -I luciano.aguiar
+   50  usermod -L luciano.aguiar
+   51  usermod -U luciano.aguiar
+   52  chage -M 30 -m 1 luciano.aguiar
+   53  chage -L luciano.aguiar
+   54  chage -l luciano.aguiar
+   55  halt
+   56  -clear
+   57  clear
+   58  adduser armando
+   59  adduser armando --no-create-home armando
+   60  adduser armando --no-create-shell armando
+   61  chage -M 20 -m 2 armando
+   62  adduser renata
+   63  mkdir /srv/renata
+   64  ls -l
+   65  usermod -L armando
+   66  usermod -L renata
+   67  adduser contabilidade
+   68  echo "contabilidade" > leiame
+   69  ls -l
+   70  cd /home
+   71  ls
+   72  usermod -d $srv $renata
+   73  usermod -d -m $srv $renata
+   74  ls
+   75  ls /srv
+   76  srv
+   77  cd /srv
+   78  ls 
+   79  usermod -d -m $srv $renata
+   80  cd /srv/renata
+   81  echo "contabilidade" > leiame
+   82  ls 
+   83  echo "contabilidade" > Dados de contabilidade do mes
+   84  ls
+   85  ls -l
+   86  ls 
+   87  rm contabilidade
+   88  rm leiame
+   89  ls
+   90  rm dados
+   91* 
+   92  echo "contabilidade" > DadosDeContabilidadeDoMes
+   93  ls
+   94  chown /srv/renata "df -h" 
+   95  chown renata "df -h" 
+   96  ls df -h
+   97  /home
+   98  cd /hoem
+   99  cd /home
+  100  df -h
+  101  df -h > partition.txt
+  102  chown /srv/renata "partition.txt"
+  103  chown /srv "partition.txt"
+  104  ls
+  105  rm partition.txt
+  106  cd /srv/renata
+  107  df -h > partition.txt
+  108  ls
+  109  cd
+  110  addgroup ensino
+  111  usermod -G ensino renata
+  112  chown renata.ensino Contabilidade
+  113  chown renata.ensino DadosDeContabilidadeDoMes
+  114  cd /srv/renata
+  115  ls
+  116  rm DadosDeContabilidadeMes
+  117  rm DadosDeContabilidadeDoMes
+  118  ls
+  119  echo "Dados de Contabilidade do Mes" > Contabilidade
+  120  ls
+  121  chown renata.ensino Contabilidade
+  122  ln -s /srv/renata/partition /srv/renata/armazenamento
+  123  mv Contabilidade Leiame
+  124  history > Comandos
+  125  history > Comandos.txt
