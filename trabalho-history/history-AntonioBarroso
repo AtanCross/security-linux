@@ -1,0 +1,62 @@
+    1  uname -a
+    2  apt-cache search linux-headers
+    3  apt-get insatll linux-headers-4.9.0-6-all build-essentials
+    4  apt-get install linux-headers-4.9.0-6-all build-essentials
+    5  apt-get install linux-headers-4.9.0-6-all build-essential
+    6  ip  a show
+    7  cd /media/cdrom
+    8  ls
+    9  cp VBoxLinuxAdditions.run /home/aluno/
+   10  cd /home/aluno/
+   11  ls
+   12  chmod +x VBoxLinuxAdditions.run 
+   13  ./VBoxLinuxAdditions.run 
+   14  reboot
+   15  ip a show
+   16  ping 8.8.8.8
+   17  ip a show
+   18  ping 192.168.5.1
+   19  ping 8.8.8.8
+   20  ping www.google.com.br
+   21  ssh luciano.aguiar@192.168.5.1
+   22  ssh luciano.aguiar@192.168.5.1
+   23  apt-get install git
+   24  ls
+   25  cd Downloads/
+   26  ls
+   27  dpkg -i Nessus-7.1.2-debian6_i386.deb 
+   28  apt-get -f install
+   29  apt-cache search nessus
+   30  dpkg -i Nessus-7.1.2-debian6_i386.deb 
+   31  uname -a
+   32  ls
+   33  dpkg -i Nessus-7.1.2-debian6_amd64.deb 
+   34  /etc.init.d/nessusd start
+   35  /etc/init.d/nessusd start
+   36  useradd
+   37  adduser --no-create-home armando --shell=/bin/false
+   38  usermod armando -x 20 -n 2
+   39  usermod
+   40  moduser
+   41  usermod
+   42  usermod -l armando -x 20 -n 2
+   43  chage armando -M 20 -m 2
+   44  adduser renata  --home=/srv/renata
+   45  usermod renata -e 0
+   46  cd /srv/renata
+   47  nano contabilidade
+   48  cat contabilidade 
+   49  df -h /partition
+   50  df -h
+   51  df
+   52  df -h > partition
+   53  cat partition
+   54  groupadd ensino
+   55  groupadd
+   56  usermod renata -G ensino
+   57  chown -R renata:ensino contabilidade 
+   58  history
+   59  ln -s /srv/renata/partition /srv/renata/armazenamento
+   60  ls
+   61  mv contabilidade leiame
+   62  history > comandos
