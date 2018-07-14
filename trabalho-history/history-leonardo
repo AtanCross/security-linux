@@ -1,0 +1,20 @@
+    1  adduser --no-create-home armando --shell=/bin/false
+    2  userdel armando
+    3  adduser --no-create-home armando --shell=/bin/false
+    4  usermod -x 20 -n 2
+    5  usermod armando -x 20 -n 2 
+    6  usermod -l armando -x 20 -n 2 
+    7  chage armando -M 20 -m 2 
+    8  adduser renata --home=/srv/renata
+    9  usermod renata -e 0
+   10  cd /srv/renata/
+   11  nano contabilidade
+   12  df -h > partition
+   13  cat partition 
+   14  usermod renata -G ensino 
+   15  groupadd ensino
+   16  usermod renata -G ensino 
+   17  chown -R renata:ensino contabilidade
+   18  ln -s /srv/renata/partition /srv/renata/armazenamento
+   19  mv contabilidade leiame
+   20  history > comandos
