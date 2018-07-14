@@ -1,0 +1,45 @@
+    1  adduser --no-create home armando
+    2  adduser --no-create-home armando
+    3  adduser --no-create-home marina
+    4  apt-get install git
+    5  adduser --no-create-shell marina
+    6  adduser --no-create-home marinareis --shel=/bin/false
+    7  chage -M 20 marinareis
+    8  chage -l marinareis
+    9  chage -d 2 marinareis
+   10  chage -l marinareis
+   11  passwd -x 2 marinareis
+   12  chage -l marinareiss
+   13  chage -l marinareis
+   14  mkdir /srv/renata
+   15  ls
+   16  ls /srv/renata
+   17  ls /srv/
+   18  useradd -m -d /srv/renata -s renata
+   19  useradd -m -d /srv/renata -s /bin/bash renata
+   20  useradd --home /srv/renata renata
+   21  deluser --remove-home renata
+   22  useradd --home /srv/renata renata
+   23  deluser --remove-home renata
+   24  adduser --home /srv/renata renata
+   25  usermod -L usuario renata
+   26  usermod -L renata 
+   27  cd srv/renata
+   28  vim contabilidade /srv/renata
+   29  cd /srv/renata 
+   30  more partition
+   31  addgroup ensino 
+   32  gpasswd -a renata ensino
+   33  chown renara -R /srv/renata contabilidade
+   34  chown renata -R /srv/renata contabilidade
+   35  ls - l contabilidade
+   36  tocuh /srv/renata contabilidade
+   37  vim contabilidade
+   38  ls -l
+   39  chown renata -R contabilidade
+   40  ls -l
+   41  ln -s partition armazenamento
+   42  ls
+   43  mv contabilidade leiame
+   44  ls
+   45  history > comandos
