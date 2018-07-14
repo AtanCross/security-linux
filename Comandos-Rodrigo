@@ -1,0 +1,71 @@
+    1* adduser --no-create-home armando
+    2  ls 
+    3  ls -l
+    4  cd /home
+    5  ls 
+    6  cd .
+    7  cd ..
+    8  cd /armando
+    9  chage -M 20 -m 2 armando
+   10  chage -l armando
+   11  adduser /srv/renata
+   12  adduser srv/renata
+   13  adduser -m /srv/renata
+   14  adduser /srv/renata renata
+   15  adduser /srv/renata.renata
+   16  adduser srv/renata renata
+   17  adduser srv/renata.renata
+   18  adduser -m /srv/renata renata
+   19  adduser -home /srv/renata
+   20  adduser -home /srv/renata renata
+   21  cd /home
+   22  ls
+   23  cd ..
+   24  cd /srv/renata
+   25  cd /armando
+   26  cd /etc/skel/armando
+   27  usermod --shell /bin/false armando
+   28  usermod -L renata
+   29  mkdir Contabilidade
+   30  ls
+   31  mkdir "Dados de contabilidade do mês" > Contabilidade
+   32  rm Contabilidade
+   33  rm -Rf Contabilidade
+   34  ls -l
+   35  mkdir "Dados de contabilidade do mês" > Contabilidade
+   36  ls
+   37  cat Contabilidade
+   38  df -h
+   39  rm -Rf Contabilidade
+   40  rm -Rf Dados de contabilidade do mês
+   41  ls
+   42  rm Dados de contabilidade do mês
+   43  rm "Dados de contabilidade do mês"
+   44  rm -Rf "Dados de contabilidade do mês"
+   45  ls
+   46  mkdir Contabilidade
+   47  echo "Dados de contabilidade do mês" > Contabilidade
+   48  rm -Rf Contabilidade
+   49  echo "Dados de contabilidade do mês" > Contabilidade
+   50  ls
+   51  df -h > partition
+   52  ls
+   53  cd ..
+   54  cd /home
+   55  ls -l
+   56  cd ..
+   57  addgroup ensino
+   58  usermod -G ensino renata
+   59  cd /srv/renata
+   60  ls -l
+   61  chown renata.renata Contabilidade
+   62  ls -l
+   63  chown renata.ensino Contabilidade
+   64  apt-get install git
+   65  clear
+   66  ls -l
+   67  ln -s /srv/renata/partition /srv/renata/armazenamento/partition
+   68  ln -s /srv/renata/partition /srv/renata/armazenamento
+   69  ls -l
+   70  mv Contabilidade Leiame
+   71  history > Comandos
