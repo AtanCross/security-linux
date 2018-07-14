@@ -1,0 +1,85 @@
+    1  adduser --no-create-home pedro
+    2  adduser --no-create-home armando
+    3  usermod -s /bin/false armando
+    4  finger armando
+    5  chage -l armando
+    6  chage -M 20 -m 1 armando
+    7  chacge -l armando
+    8  chage -l armando
+    9  man chage
+   10  chage -m 2 -m 1 armando
+   11  chage -l armando
+   12  chage -m 2 -m 2 armando
+   13  chage -l armando
+   14  cd /srv
+   15  ls
+   16  vim /etc/passwd
+   17  adduser renata
+   18  vim /etc/passwd
+   19  ls
+   20  cd /home
+   21  ls
+   22  usermod -d /srv/renata renata
+   23  man usermod
+   24  usermod --home /srv/renata renata
+   25  usermod --home/renata /srv/renata renata
+   26  ls
+   27  apt-get install git
+   28  usermod -d /srv/renata renata
+   29  adduser --home joao /srv/joao
+   30  ls
+   31  cd /srv
+   32  ls
+   33  vim /etc/passwd
+   34  usermod -d -m $srv $renata
+   35  ls
+   36  usermod -d -m $srv $renata
+   37  usermod -d --move-home /srv
+   38* 
+   39  usermod -d -m $srv $renata
+   40  usermod  -m $srv $renata
+   41  usermod -m $srv $renata
+   42  ls
+   43  usermod -d -m $srv $renata
+   44  mkdir /srv/renata
+   45  cd /srv
+   46  ls
+   47  echo "contabilidade" > dadoscontabilidadedomes
+   48  ls
+   49  cd /renata
+   50  ls
+   51  rm dadoscontabilidadedomes  
+   52  ls
+   53  cd renata
+   54  echo "contabilidade" > dadoscontabilidadedomes
+   55  ls
+   56  df -h
+   57  cd /home
+   58  ls
+   59  df -h ! more
+   60  df -h ! grep more
+   61  df -h > partition.txt
+   62  ls
+   63  vim partition
+   64  ls
+   65  vim partition.txt
+   66  rm partition
+   67  ls
+   68  rm partition.txt
+   69  cd /srv
+   70  cd renata
+   71  df -h > partition.txt
+   72  ls
+   73  addgroup ensino
+   74  usermod -G ensino renata
+   75  chown renata.ensino contabilidade
+   76  ls
+   77  rm dadoscontabilidadedomes 
+   78  ls
+   79  echo "dadoscontabilidadedomes" > contabilidade
+   80  ls
+   81  ln -s /srv/renata/partition /srv/renata/armazenamento
+   82  ls
+   83  mv contabilidade leiame
+   84  ls
+   85  history > comandos.txt
