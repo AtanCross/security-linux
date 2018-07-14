@@ -1,0 +1,87 @@
+    1  vim /etc/ssh/sshd_config 
+    2  apt-get install vim
+    3  vim /etc/ssh/sshd_config 
+    4  /etc/init.d/ssh restart
+    5  apt-get install isc-dhcp-server
+    6  ip a show
+    7  cp /home/aluno/.bashrc /root
+    8  vim /etc/ssh/sshd_config 
+    9  /etc/init.d/ssh restart
+   10  exit
+   11  ip a show
+   12  dhclient enp0s3
+   13  ip a show
+   14  exit
+   15  chmod +x /etc/rc.local 
+   16  halt
+   17  ip a show
+   18  iptables -t nat -L
+   19  apt-get remove firewalld
+   20  reboot
+   21  ip a show
+   22  iptables -t nat -L
+   23  more /etc/login.defs 
+   24  getent passwd
+   25  id aluno
+   26  getent group
+   27  groups aluno
+   28  finger aluno
+   29  cat /etc/passwd | grep aluno
+   30  head /etc/passwd
+   31  adduser luciano.aguiar
+   32  adduser --force-badname luciano.aguiar
+   33  cat /etc/passwd | grep luciano
+   34  chage -M 30 luciano.aguiar
+   35  chage -l luciano.aguiar
+   36  chage -L luciano.aguiar
+   37  chage -I luciano.aguiar
+   38  chage -I l
+   39  chage -I 
+   40  chage -I luciano.aguiar
+   41  chage -d 1 luciano.aguiar
+   42  chage -h luciano.aguiar
+   43  gpasswd -a luciano.aguiar aluno
+   44  finger luciano.aguiar
+   45  chage -l aluno
+   46  chage -M 30 -m 1 luciano.aguiar
+   47  chage -l luciano.aguiar
+   48  chage -L luciano.aguiar
+   49  chage -I luciano.aguiar
+   50  usermod -L luciano.aguiar
+   51  usermod -U luciano.aguiar
+   52  chage -M 30 -m 1 luciano.aguiar
+   53  chage -L luciano.aguiar
+   54  chage -l luciano.aguiar
+   55  halt
+   56  useradd armando
+   57  usermod --shell /bin/false armando
+   58  apt-get install git
+   59  chage -M 20 -m 2 armando
+   60  chage -l armando
+   61  useradd -home /srv/renata renata
+   62  adduser -home /srv/renata renata
+   63  usermode -L renata
+   64  usermod -L renata
+   65  mkdir contabilidade
+   66  echo "dados de contabilidade" > contabilidade
+   67  rm -Rfcontabilidade
+   68  rm -Rf contabilidade
+   69  echo "dados de contabilidade do mes" > contabilidade  
+   70  ls 
+   71  rm -Rf contabilidade
+   72  cd /srv/renata
+   73  echo "dados de contabilidade do mes" > contabilidade  
+   74  ls
+   75  df -h > partition
+   76  ls
+   77  cd ..
+   78  addgroup ensino
+   79  usermod -G ensino renata
+   80  cd /srv/renata
+   81  chown renata.ensino. contabilidade
+   82  chown renata.ensino contabilidade
+   83  ln -s /srv/renata/partition /srv/renata/armazenamento/partition
+   84  ln -s /srv/renata/partition /srv/renata/armazenamento
+   85  mv contabilidade Leiame
+   86  ls
+   87  history >comandos
