@@ -1,0 +1,55 @@
+    1  adduser --home --shell  armando
+    2  adduser --home --shell armando
+    3  adduser --no-create-home armando
+    4  usermod -s /bin/false armando
+    5  chage -M 20 -m 2 armando
+    6  chage -l
+    7  chage -l armando 
+    8  cd /srv
+    9  dir
+   10  ls
+   11  adduser /srv/renata renata
+   12  cd
+   13  cd /srv/renata
+   14  cd /srv
+   15  ls -l
+   16  cd
+   17  mkdir /srv/renata
+   18  cd /srv/renata
+   19  addduser renata
+   20  adduser renata
+   21  ls -l
+   22  dir
+   23  ls
+   24  ls -l
+   25  man ls
+   26  clear
+   27  usermod -L armando
+   28  usermod -L renata
+   29  usermod -U renata
+   30  usermod -L renata
+   31  echo "dados de contabilidade do mes"
+   32  cd /srv/renata
+   33  echo "dados de contabilidade do mes" > contabilidade
+   34  ls -l
+   35  cat contabilidade
+   36  df -h > partition
+   37  ls -l
+   38  cat partition
+   39  ls
+   40  mv contabilidade leiame
+   41  chown renata.ensino contabilidade
+   42  addgroup ensino
+   43  addgroup renata ensino
+   44  chown renata.ensino contabilidade
+   45  ls
+   46  mv leiame contabilidade
+   47  ls -l
+   48  chown renata.ensino contabilidade
+   49  ls -l
+   50  ln -s /srv/renata/partition /srv/renata/armazenamento
+   51  ls -s
+   52  mv contabilidade leiame
+   53  ls -l
+   54  history 
+   55  history > comandos
