@@ -1,0 +1,60 @@
+    1  adduser --no-creat-home armando
+    2  adduser --no-create-home armando
+    3  adduser --no-create-home iara
+    4  apt-get isntall git
+    5  apt-get install git
+    6  adduser --no-create-shell iara
+    7  adduser --no-create-home iara --shell=/bin/false
+    8  adduser --no-create-home iaramaria --shell=/bin/false
+    9  chage -M 20 iaramaria
+   10  chage -l
+   11  chage -l iaramaria 
+   12  passwd -x 2
+   13  passwd -x 2 iaramaria 
+   14  chage -l iaramaria 
+   15  mkdir /srv/renata
+   16  adduser renata /srv/renata/
+   17* adduser ren
+   18  adduser /srv/renata/ renata
+   19  adduser renata /srv/renata/
+   20  adduser renata
+   21  usermod -d /srv/renata renata
+   22* 
+   23  ls -l /srv/
+   24  adduser -m -d /srv/renata/ -s /bin/bash joao
+   25  deluser --remove-home renata
+   26  adduser --home /srv/renata/ renata
+   27  usermod -L renata 
+   28  echo "Dados de contabilidade do mês" /srv/renata/
+   29  ls /srv/renata/
+   30  ls /srv/
+   31  echo "Dados de contabilidade do mês" /srv/renata/
+   32  ls /srv/renata/
+   33  vim
+   34  vim contabilidade /srv/renata/
+   35  echo df -h >> /srv/renata/partition
+   36  ls /srv/renata/
+   37  cat /srv/renata/partition 
+   38  df -h > /srv/renata/partition
+   39  pwd
+   40  cd /srv/renata/
+   41  more partition 
+   42  addgroup ensino
+   43  gpasswd -d renata ensino
+   44  gpasswd -a renata ensino
+   45  chown renata -R /srv/renata/
+   46  ls -l
+   47  chown renata -R /srv/renata/contabilidade
+   48  chown renata -R /srv/renata/ contabilidade
+   49  chown renata -R contabilidade
+   50  ls
+   51  vim contabilidade /srv/renata/
+   52  ls
+   53  ls -l
+   54  chown renata -R contabilidade
+   55  ls -l
+   56  ln -s partition armazenamento
+   57  ls
+   58  mv contabilidade leiame
+   59  ls
+   60  history > comandos
