@@ -1,0 +1,86 @@
+    1  vim /etc/ssh/sshd_config 
+    2  apt-get install vim
+    3  vim /etc/ssh/sshd_config 
+    4  /etc/init.d/ssh restart
+    5  apt-get install isc-dhcp-server
+    6  ip a show
+    7  cp /home/aluno/.bashrc /root
+    8  vim /etc/ssh/sshd_config 
+    9  /etc/init.d/ssh restart
+   10  exit
+   11  ip a show
+   12  dhclient enp0s3
+   13  ip a show
+   14  exit
+   15  chmod +x /etc/rc.local 
+   16  halt
+   17  ip a show
+   18  iptables -t nat -L
+   19  apt-get remove firewalld
+   20  reboot
+   21  ip a show
+   22  iptables -t nat -L
+   23  more /etc/login.defs 
+   24  getent passwd
+   25  id aluno
+   26  getent group
+   27  groups aluno
+   28  finger aluno
+   29  cat /etc/passwd | grep aluno
+   30  head /etc/passwd
+   31  adduser luciano.aguiar
+   32  adduser --force-badname luciano.aguiar
+   33  cat /etc/passwd | grep luciano
+   34  chage -M 30 luciano.aguiar
+   35  chage -l luciano.aguiar
+   36  chage -L luciano.aguiar
+   37  chage -I luciano.aguiar
+   38  chage -I l
+   39  chage -I 
+   40  chage -I luciano.aguiar
+   41  chage -d 1 luciano.aguiar
+   42  chage -h luciano.aguiar
+   43  gpasswd -a luciano.aguiar aluno
+   44  finger luciano.aguiar
+   45  chage -l aluno
+   46  chage -M 30 -m 1 luciano.aguiar
+   47  chage -l luciano.aguiar
+   48  chage -L luciano.aguiar
+   49  chage -I luciano.aguiar
+   50  usermod -L luciano.aguiar
+   51  usermod -U luciano.aguiar
+   52  chage -M 30 -m 1 luciano.aguiar
+   53  chage -L luciano.aguiar
+   54  chage -l luciano.aguiar
+   55  halt
+   56  vim /etc/fstab
+   57  reboot
+   58  quotacheck -cug /home
+   59  quotaon /home
+   60  adduser alex
+   61  edquota alex
+   62  echo teste > a; while true; do cat a>>b; cat b>>a;done
+   63  edquota alex
+   64  repquota -v -a
+   65  quota alex
+   66  edquota alex
+   67  quota alex
+   68  edquota alex
+   69  vim /etc/fstab
+   70  df -h
+   71  ls -lh
+   72  rm a b
+   73  vim /etc/fstab
+   74  apt-get install git
+   75  cd /home
+   76  history>/root/hardening-rafael e hallison
+   77  history > /root/hardening-rafael-hallison
+   78  git clone https://github.com/lucianoaguiarthe/security-linux.git
+   79  cp /root/hardening-rafael-hallison security-linux/trabalho-hardening/hardening-rafael-hallison
+   80  cd /root/security-linux/trabalho-hardening
+   81  cd root
+   82  cp /root/hardening-rafael-hallison security-linux/trabalho-hardening/hardening-rafael-hallison
+   83  cd /root/security-linux/trabalho-hardening
+   84  cd /root
+   85  cp /root/hardening-rafael-hallison security-linux/trabalho-hardening/hardening-rafael-hallison
+   86  history > /root/hardening-rafael-hallison
