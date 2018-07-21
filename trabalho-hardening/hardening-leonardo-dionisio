@@ -75,3 +75,22 @@
    75  history > root/hardening-leoglopesl200-dionisio
    76  history > root/hardening-leoglopesl200
    77  history > /root/hardening-leonardo-dionisio
+   78  git clone https://gitbub.com/lucianoaguiarthe/security-linux.git
+   79  git clone https://github.com/lucianoaguiarthe/security-linux.git
+   80  /cp /root/hardening-leonardo-dionisio security-linux/trabalho-hardening/hardening-leonardo-dionisio
+   81  cp /root/hardening-leonardo-dionisio security-linux/trabalho-hardening/hardening-leonardo-dionisio
+   82  cd /root/security-linux/trabalho-hardening
+   83  git config -global user.name "leonardo-dionisio"
+   84  git config-global user.name "leonardo-dionisio"
+   85  git config-global user.name leonardo-dionisio
+   86  git config-global user.leoglopes "leonardo-dionisio"
+   87  git config-global user.leoglopesl200 "leonardo-dionisio"
+   88  git config --global user.name "leonardo-dionisio"
+   89  git config --global user.email leoglopesl200@gmail.com
+   90  git add hardening-leonardo-dionisio
+   91  git commit -m "envio de trabalho leonardo-dionisio"
+   92  git push -u origin master
+   93  apt-get install git
+   94  cd /root
+   95  ls
+   96  history> /root/hardening-leonardo-dionisio
