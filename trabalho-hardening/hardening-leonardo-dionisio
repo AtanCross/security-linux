@@ -1,0 +1,77 @@
+    1  vim /etc/ssh/sshd_config 
+    2  apt-get install vim
+    3  vim /etc/ssh/sshd_config 
+    4  /etc/init.d/ssh restart
+    5  apt-get install isc-dhcp-server
+    6  ip a show
+    7  cp /home/aluno/.bashrc /root
+    8  vim /etc/ssh/sshd_config 
+    9  /etc/init.d/ssh restart
+   10  exit
+   11  ip a show
+   12  dhclient enp0s3
+   13  ip a show
+   14  exit
+   15  chmod +x /etc/rc.local 
+   16  halt
+   17  ip a show
+   18  iptables -t nat -L
+   19  apt-get remove firewalld
+   20  reboot
+   21  ip a show
+   22  iptables -t nat -L
+   23  more /etc/login.defs 
+   24  getent passwd
+   25  id aluno
+   26  getent group
+   27  groups aluno
+   28  finger aluno
+   29  cat /etc/passwd | grep aluno
+   30  head /etc/passwd
+   31  adduser luciano.aguiar
+   32  adduser --force-badname luciano.aguiar
+   33  cat /etc/passwd | grep luciano
+   34  chage -M 30 luciano.aguiar
+   35  chage -l luciano.aguiar
+   36  chage -L luciano.aguiar
+   37  chage -I luciano.aguiar
+   38  chage -I l
+   39  chage -I 
+   40  chage -I luciano.aguiar
+   41  chage -d 1 luciano.aguiar
+   42  chage -h luciano.aguiar
+   43  gpasswd -a luciano.aguiar aluno
+   44  finger luciano.aguiar
+   45  chage -l aluno
+   46  chage -M 30 -m 1 luciano.aguiar
+   47  chage -l luciano.aguiar
+   48  chage -L luciano.aguiar
+   49  chage -I luciano.aguiar
+   50  usermod -L luciano.aguiar
+   51  usermod -U luciano.aguiar
+   52  chage -M 30 -m 1 luciano.aguiar
+   53  chage -L luciano.aguiar
+   54  chage -l luciano.aguiar
+   55  halt
+   56  apt-get install quota quota-tool
+   57  apt-get install quota quotatool
+   58  clear
+   59  apt-get install quota 
+   60  apt-get install quota quotatool
+   61  clear
+   62  vim /etc/fstab
+   63  reboot
+   64  clear
+   65  quotacheck -cug /home
+   66  quotaaon /home
+   67  quotaon /home
+   68  adduser alex
+   69  edquota alex
+   70  vim /etc/fstab
+   71  apt-get install git
+   72  cd root
+   73  cd /root
+   74  history > root/hardening-leonardo-dionisio
+   75  history > root/hardening-leoglopesl200-dionisio
+   76  history > root/hardening-leoglopesl200
+   77  history > /root/hardening-leonardo-dionisio
