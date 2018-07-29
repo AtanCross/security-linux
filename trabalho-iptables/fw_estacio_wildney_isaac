@@ -1,0 +1,69 @@
+# 1) Politica padrao para bloquar todas as portas #
+
+iptables -P FORWARD DROP
+iptables -P OUTPUT DROP
+iptables -P INPUT DROP
+
+
+
+# 2) Liberando portas icmp da rede interna para o firewall #
+
+iptables -A FORWARD -p icmp -s 192.168.0.0/24 -i eth1 -j ACCEPT
+iptables -A INPUT -p icmp -s 192.168.0.0/24 -i eth1 -j ACCEPT
+
+
+
+# 3) Liberando protocolo UDP porta 53 da rede interna #
+
+iptables -t filter -A FORWARD -p udp --dport 53 -i eht1 -j ACCEPT
+iptables -t filter -A INPUT -p udp --dport 53 -i eth1 -j ACCEPT
+
+
+
+# 4) Liberando acesso a porta 22 tcp da rede interna #
+
+
+
+iptables -filter -A FORWARD -p tcp --dport 22 -i eth1 -j ACCEPT
+iptables -filter -A INPUT -p tcp --dport 22 -i eth1 -j ACCEPT
+
+
+
+# 5) Liberando acesso da rede interna para ss portas 80,443,21,25 e 587 com protocolo UDP e TCP # 
+
+
+iptables -A INPUT -p tcp --dport 80 -i eth1 -j ACCEPT
+iptables -A FORWAR -p tcp --dport 80 -i eth1 -j ACCEPT
+
+iptables -A INPUT -p udp --dport 80 -i the1 -j ACCEPT
+iptables -A FORWARD -p udp --dport 80 -i eth1 -j ACCEPT
+
+
+iptables -A INPUT -p tcp --dport 443 -i eth1 -j ACCEPT
+iptables -A FORWARD -p tcp --dport 443 -i eth1 -j ACCEPT
+
+iptables -A INPUT -p udp --dport 443 -i eth1 -j ACCEPT
+iptabels -A FORWARD -p udp --dport 443 -i eth1 -j ACCEPT
+
+
+iptables -A INPUT -p tcp --dport 21 -i eth1 -j ACCEPT
+iptables -A FORWARD -p tcp --dport 21 -i eth1 -j ACCEPT
+
+iptables -A INPUT -p udp --dport 21 -i eth1 -j ACCEPT
+iptables -A FORWARD -p udp --dport 21 -i eth1 -j ACCEP
+
+
+iptables -A INPUT -p tcp --dport 25 -i eth1 -j ACCEPT
+iptables -A FORWARD -p tcp --dport 25 -i eth1 -j ACCEPT
+
+iptables -A INPUT -p udp --dport 25 -i eth1 -j ACCEPT
+iptables -A FOPRWARD -p udp --dport 25 -i eth1 -j ACCEPT
+
+
+iptables -A INPUT -p tcp --dport 587 -i eth1 -j ACCEPT
+iptables -A FORWARD -p tcp --dport 25 -i eth1 -j ACCEPT
+
+iptables -A INPUT -p udp --dport 587 -i eth1 -j ACCEPT
+iptable -A FORWARD -p udp --dport 857 -i eth1 -j ACCEPT
+
+
