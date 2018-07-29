@@ -1,0 +1,154 @@
+    1  vim /etc/ssh/sshd_config 
+    2  apt-get install vim
+    3  vim /etc/ssh/sshd_config 
+    4  /etc/init.d/ssh restart
+    5  apt-get install isc-dhcp-server
+    6  ip a show
+    7  cp /home/aluno/.bashrc /root
+    8  vim /etc/ssh/sshd_config 
+    9  /etc/init.d/ssh restart
+   10  exit
+   11  ip a show
+   12  dhclient enp0s3
+   13  ip a show
+   14  exit
+   15  chmod +x /etc/rc.local 
+   16  halt
+   17  ip a show
+   18  iptables -t nat -L
+   19  apt-get remove firewalld
+   20  reboot
+   21  ip a show
+   22  iptables -t nat -L
+   23  more /etc/login.defs 
+   24  getent passwd
+   25  id aluno
+   26  getent group
+   27  groups aluno
+   28  finger aluno
+   29  cat /etc/passwd | grep aluno
+   30  head /etc/passwd
+   31  adduser luciano.aguiar
+   32  adduser --force-badname luciano.aguiar
+   33  cat /etc/passwd | grep luciano
+   34  chage -M 30 luciano.aguiar
+   35  chage -l luciano.aguiar
+   36  chage -L luciano.aguiar
+   37  chage -I luciano.aguiar
+   38  chage -I l
+   39  chage -I 
+   40  chage -I luciano.aguiar
+   41  chage -d 1 luciano.aguiar
+   42  chage -h luciano.aguiar
+   43  gpasswd -a luciano.aguiar aluno
+   44  finger luciano.aguiar
+   45  chage -l aluno
+   46  chage -M 30 -m 1 luciano.aguiar
+   47  chage -l luciano.aguiar
+   48  chage -L luciano.aguiar
+   49  chage -I luciano.aguiar
+   50  usermod -L luciano.aguiar
+   51  usermod -U luciano.aguiar
+   52  chage -M 30 -m 1 luciano.aguiar
+   53  chage -L luciano.aguiar
+   54  chage -l luciano.aguiar
+   55  halt
+   56  cd /gabriel
+   57  cd gabriel
+   58  cd /srv/gabriel
+   59  vim teste
+   60  exit
+   61  cd /home
+   62  ls
+   63  quotacheck -cug /home
+   64  qu
+   65  quotacheck -cug /home
+   66  vim /etc/fstab
+   67  rm /etc/.fstab.swp 
+   68  vim /etc/fstab
+   69  reboot
+   70  ls
+   71  cd /root/git
+   72  ls
+   73  git clone https://github.com/lucianoaguiarthe/security-inux.git
+   74  https://github.com/lucianoaguiarthe/security-inux.git
+   75  git clone https://github.com/lucianoaguiarthe/security-inux.git
+   76  reboot
+   77  git clone https://github.com/lucianoaguiarthe/security-inux.git
+   78  git clone https://github.com/lucianoaguiarthe/security-linux.git
+   79  cp /root/iPtablesRodrigoeVinicius security-linux/trabalho-ipTables/iPtablesRodrigoeVinicius
+   80  cp /etc/init.d/fw_estacio /root/iPtablesRodrigoeVinicius/security-linux/trabalho-IPTables/fw_estacio_aluno
+   81  cp /etc/init.d/fw_estacio /root/git/security-linux/trabalho-IPTables/fw_estacio_aluno
+   82  ls
+   83  reboot
+   84  git clone https://github.com/lucianoaguiarthe/security-linux.git
+   85  cp /root/iPtablesRodrigoeVinicius security-linux/trabalho-iPtables/iPtablesRodrigoeVinicius
+   86  cp /root/iPtablesRodrigoeVinicius root/trabalho-iPtables/iPtablesRodrigoeVinicius
+   87  clear
+   88  cp /root/iPtablesRodrigoeVinicius security-linux/iPtablesRodrigoeVinicius
+   89  cd /root/security-linux/iPtablesRodrigoeVinicius
+   90  ls
+   91  cd /security-linux
+   92  cd /root/security-linux
+   93  ls
+   94  mkdir trabalho-IPTables
+   95  ls
+   96  cd
+   97  cp /root/iPtablesRodrigoeVinicius security-linux/trabalho-IPTables/iPtablesRodrigoeVinicius
+   98  cd /root/security-linux/trabalho-IPTables
+   99  ls
+  100  git config --global user.name Rodrigo-Vinicius
+  101  git config --global user.email rodrigo.coutinho.lopes@gmail.com
+  102  git add iPtablesRodrigoeVinicius
+  103  git commit -m "envio trabalho IPTables Rodrigo e Vinicius"
+  104  git push -u origin master
+  105  cd
+  106  ls
+  107  cd /git
+  108  cd /root/git
+  109  clear
+  110  git clone https://github.com/lucianoaguiarthe/security-linux.git
+  111  cp /etc/init.d/fw_estacio /root/git/security-linux/trabalho-iptables/fw_estacio_aluno
+  112  ls
+  113  cd
+  114  ls
+  115  more iPtablesRodrigoeVinicius
+  116  cat iPtablesRodrigoeVinicius
+  117  more iPtablesRodrigoeVinicius.txt
+  118  head /root/iPtablesRodrigoeVinicius
+  119  clear
+  120  reboot
+  121  iptables -P INPUT DROP
+  122  iptables -P OUTPUT DROP
+  123  iptables -P FORWARD DROP
+  124  ip a show
+  125  iptables -A INPUT -p icmp -s 127.0.0.1/8 -j ACCEPT
+  126  iptables -A OUTPUT -p icmp -d 127.0.0.1/8 -j ACCEPT
+  127  iptables -A INPUT -p udp --dport 53 -s 127.0.0.1/8 -j ACCEPT
+  128  iptables -D INPUT -p tcp --dport 53 -s 127.0.0.1/8 -j ACCEPT
+  129  iptables -A INPUT -p tcp --sport 22 -d 127.0.0.1/8 -j ACCEPT
+  130  reboot
+  131  iptables -P INPUT DROP
+  132  iptables -P OUTPUT DROP
+  133  iptables -P FORWARD DROP
+  134  ip a show
+  135  iptables -A INPUT -p icmp -s 127.0.0.1/8 -j ACCEPT
+  136  iptables -A OUTPUT -p icmp -d 127.0.0.1/8 -j ACCEPT
+  137  iptables -A INPUT -p udp --dport 53 -s 127.0.0.1/8 -j ACCEPT
+  138* iptables -A INPUT -p udp --sport 53 -i eth0 -j ACCEPT
+  139  iptables -D INPUT -p udp --dport 53 -i eth0 -j ACCEPT
+  140  iptables -D INPUT -p tcp --dport 53 -s 127.0.0.1/8 -j ACCEPT
+  141  iptables -D INPUT -p udp --dport 53 -s 127.0.0.1/8 -j ACCEPT
+  142  iptables -A INPUT -p udp --sport 53 -d 127.0.0.1/8 -j ACCEPT
+  143  iptables -A INPUT -p udp --sport 53 -i eth0 -j ACCEPT
+  144  iptables -A INPUT -p tcp --sport 22 -d 127.0.0.1/8 -j ACCEPT
+  145  iptables -A INPUT -p tcp --sport 22 -i eth0 -j ACCEPT
+  146  iptables -A FORWARD -m multiport -p tcp --sport 80,443,21,25,587 -d 127.0.0.1/8 -j ACCEPT
+  147  iptables -A FORWARD -m multiport -p tcp --dport 80,443,21,25,587 -s 127.0.0.1/8 -j ACCEPT
+  148  iptables -A FORWARD -m multiport -p udp --sport 80,443,21,25,587 -d 127.0.0.1/8 -j ACCEPT
+  149  iptables -A FORWARD -m multiport -p udp --dport 80,443,21,25,587 -s 127.0.0.1/8 -j ACCEPT
+  150  cd /root
+  151  mkdir git
+  152  cd /root/git
+  153  git clone https://github.com/lucianoaguiarthe/security-linux.git
+  154  history > /etc/init.d/fw_estacio
