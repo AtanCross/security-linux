@@ -1,0 +1,18 @@
+//Liberar o acesso icmp da rede interna para o firewall
+iptables -P INPUT -p icmp -s 172.16.1.0/24 -d 172.16.1.1 ACCEPT
+
+//Liberar o acesso udp porta 53 da rede interna para o firewall
+iptables -P INPUT -p udp --dport53 -s 172.16.1.0/24 -d 172.16.1.1 ACCEPT
+
+//Liberar o acesso da porta 22 tcp da rede interna para o firewall
+iptables -P INPUT -p tcp --dport22 -s 172.16.1.0/24 -d 172.16.1.1 ACCEPT
+
+//Liberar o acesso para a rede interna nas portas 80, 443, 21, 25 e 587
+//e UDP (CHAIN FORWARD)
+iptables -P INPUT --dport80,443,21,25,587 -s  -d 172.16.1.0/24 ACCEPT
+
+//Regras padrão
+iptables -P INPUT DROP
+iptables -P OUTPUT DROP
+iptables -P FORWARD DROP
+
